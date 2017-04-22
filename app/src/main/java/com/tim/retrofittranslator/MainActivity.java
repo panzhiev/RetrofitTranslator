@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         translateBtn = (Button) findViewById(R.id.translate_btn);
         translateBtn.setOnClickListener(this);
         translated = (TextView) findViewById(R.id.translated);
-        text = (EditText) findViewById(R.id.text1);
+        text = (EditText) findViewById(R.id.et1);
     }
 
     @Override
