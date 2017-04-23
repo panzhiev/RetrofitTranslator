@@ -2,10 +2,10 @@ package com.tim.retrofittranslator;
 
 import java.util.Map;
 
-import retrofit.Call;
-import retrofit.http.FieldMap;
-import retrofit.http.FormUrlEncoded;
-import retrofit.http.POST;
+import retrofit2.http.FieldMap;
+import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.POST;
+import rx.Observable;
 
 /**
  * Created by Tim on 21.04.2017.
@@ -18,5 +18,6 @@ public interface Link {
 // api/v1.5/tr.json/translate
     @FormUrlEncoded
     @POST("/api/v1.5/tr.json/translate")
-    Call<Object> translate(@FieldMap Map<String, String > map);
+//    Call<Object> translate(@FieldMap Map<String, String > map);
+    Observable<Object> translate(@FieldMap Map<String, String> map);
 }

@@ -1,139 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background"
-    android:divider="@drawable/spacer_medium"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="@dimen/spacing_medium"
-    android:showDividers="middle"
-    tools:context="com.tim.retrofittranslator.MainActivity">
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/translation"
-        android:layout_marginBottom="10dp">
-    </ImageView>
-
-    <EditText
-        android:id="@+id/et1"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edit_text_view"
-        android:padding="10dp"/>
-
-    <EditText
-        android:id="@+id/et2"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edit_text_view"
-        android:padding="10dp"
-        android:layout_marginBottom="10dp"/>
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:divider="@drawable/spacer_medium"
-        android:orientation="horizontal"
-        android:showDividers="middle">
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        tools:context="com.tim.retrofittranslator.MainActivity">
 
-        <Button
-            android:id="@+id/buttonRuEn"
+        <ImageView
             android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Ru-En"/>
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/translation" />
 
-        <Button
-            android:id="@+id/buttonEnRu"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="En-Ru"/>
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_view"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_view"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/spacer_medium"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/buttonRuEn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Ru-En" />
+
+            <Button
+                android:id="@+id/buttonEnRu"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="En-Ru" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/spacer_medium"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/buttonRuFr"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Ru-Fr" />
+
+            <Button
+                android:id="@+id/buttonFrRu"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Fr-Ru" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/spacer_medium"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/buttonRuDe"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Ru-De" />
+
+            <Button
+                android:id="@+id/buttonDeRu"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="De-Ru" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/spacer_medium"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/buttonRuPl"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Ru-Pl" />
+
+            <Button
+                android:id="@+id/buttonPlRu"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Pl-Ru" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/spacer_medium"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/buttonRuZh"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Ru-Zh" />
+
+            <Button
+                android:id="@+id/buttonZhRu"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Zh-Ru" />
+        </LinearLayout>
+
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/spacer_medium"
-        android:orientation="horizontal"
-        android:showDividers="middle">
-
-        <Button
-            android:id="@+id/buttonRuFr"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Ru-Fr"/>
-
-        <Button
-            android:id="@+id/buttonFrRu"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Fr-Ru"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/spacer_medium"
-        android:orientation="horizontal"
-        android:showDividers="middle">
-
-        <Button
-            android:id="@+id/buttonRuDe"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Ru-De"/>
-
-        <Button
-            android:id="@+id/buttonDeRu"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="De-Ru"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/spacer_medium"
-        android:orientation="horizontal"
-        android:showDividers="middle">
-
-        <Button
-            android:id="@+id/buttonRuPl"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Ru-Pl"/>
-
-        <Button
-            android:id="@+id/buttonPlRu"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Pl-Ru"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/spacer_medium"
-        android:orientation="horizontal"
-        android:showDividers="middle">
-
-        <Button
-            android:id="@+id/buttonRuZh"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Ru-Zh"/>
-
-        <Button
-            android:id="@+id/buttonZhRu"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Zh-Ru"/>
-    </LinearLayout>
-
-
-</LinearLayout>
+    <!--<ProgressBar-->
+    <!--android:id="@+id/progressbar"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_centerInParent="true"/>-->
+</RelativeLayout>
